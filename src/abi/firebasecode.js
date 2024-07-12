@@ -96,7 +96,7 @@ export const hasCompletedAllActivities = async (address) => {
     // Check if all required activities are present in the performed activities set
     return [requiredActivities.every(activity => performedActivities.has(activity)), state1, state2, state3, state4, state5, state6];
   } catch (error) {
-    console.error("Error checking activities:", error);
+    console.error("Error checking activities1:", error);
     throw error; // Re-throw the error to propagate it to the caller
   }
 };
